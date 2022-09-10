@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Enter data for Scraping</h1>
+
+    <div class="form">
+        <form action="/ytube" method="POST">
+            <label>Choose a Youtuber: </label>
+            <select name="ytuber" id="ytuber" required>
+                <option value="1">Krish Naik</option>
+                <option value="2">Hitesh Choudhary</option>
+                <option value="3">Telusko (Navin Reddy)</option>
+                <option value="4">MySirg (Saurabh Shukla)</option>
+            </select>
+            <br><br>
+            <p>Enter the number of videos: <span></span><input type="text" name="vids_no" id="vids_no" required></p>
+            <input type="submit" value="Go Scrape">
+        </form>
+    </div>
+</div>
+{% endblock %}
