@@ -30,7 +30,7 @@ connection_sql = connector.connect(host='localhost', user='root', password='1234
 cursor = connection_sql.cursor()
 
 connection_mongo = pm.MongoClient(
-    "mongodb+srv://vishwas_new:kalwogG8-4@cluster-vishwas.v3i9doq.mongodb.net/?retryWrites=true&w"
+    "mongodb+srv://Mongo_User:Mongo_Passwd@cluster-vishwas.v3i9doq.mongodb.net/?retryWrites=true&w"
     "=majority")
 db = connection_mongo.test
 
